@@ -1,5 +1,5 @@
 <h1>Project title</h1>
-<p>TodoApp is a scheduling web application that allows the users to create, update, and delete todo-list. A TodoItem consists of description and date when TodoItem will be performed. All TodoItems are listed on the dashboard and sorted by date.</p>
+<p>TodoApp is a scheduling web application that allows the users to create, update, and delete a todo-item. A todo-item consists of description and date when TodoItem will be performed. All todo-items are listed on the dashboard and sorted by date.</p>
 
 
 <h1>Motivation</h1>
