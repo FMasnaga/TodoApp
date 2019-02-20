@@ -33,7 +33,7 @@ The purpose of this app is to show CRUD operation, synchronous backend webAPI, d
 </ul>
 
 <h1>Installation, Build, and Deploy</h1>
-<p>dotnet and angular installation are required to run this application. Below are steps to install them.</p>
+<p>Dotnet and angular installation are required to run this application. Below are steps to install them.</p>
 <ul>
 	<li>Install dotnet core version 2.1 or later from here https://dotnet.microsoft.com/download</li>
 	<li>open terminal or command prompt to Install a package manager for Node.js by using this command "npm install"</li>
