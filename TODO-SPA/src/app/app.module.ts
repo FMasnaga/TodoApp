@@ -4,18 +4,25 @@ import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodoComponent } from './todo/todo.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TodoService } from './service/todo.service';
+import { TodoDetailComponent } from './todo-detail/todo-detail.component';
+
 
 @NgModule({
    declarations: [
       AppComponent,
-      TodoComponent
+      TodoComponent,
+      TodoDetailComponent,
    ],
    imports: [
       BrowserModule,
       AppRoutingModule,
-      HttpClientModule
+      HttpClientModule,
+      FormsModule,
+      ReactiveFormsModule
    ],
-   providers: [],
+   providers: [TodoService],
    bootstrap: [
       AppComponent
    ]

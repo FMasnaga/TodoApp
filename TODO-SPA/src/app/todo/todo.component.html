@@ -1,3 +1,37 @@
-<p *ngFor="let value of values">
-  {{value.id}}, {{value.description}}, {{value.time}}
-</p>
+
+<h3>Create things todo</h3>
+<div class ="col-md-6">
+  <form [formGroup]="todoForm" >
+    <div class="form-group">
+      <input name="description" formControlName="description" class="form-control" [(ngModel)]="model.description" placeholder="Description">
+    </div>
+    <div class="form-group">
+        <input type="date" formControlName="date" class="form-control" [(ngModel)]="model.date">
+    </div>
+    <div class="form-group">
+      <button class="btn btn-lg btn-info col-md-6" (click)="create(todoForm)">Submit</button>
+    </div>
+  </form>
+</div>
+<br>
+<br>
+  <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Description</th>
+          <th scope="col">Date</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let item of items">
+        <tr>
+          <td>{{item.description}}</td>
+          <td>{{item.date}}</td>
+          <button type="button" class="btn btn-primary" routerLink="/detail/{{item.id}}" >Update</button>
+          <button type="button" class="btn btn-danger" (click)="delete(item.id)">Delete</button>
+        </tr>
+      </tbody>
+  </table>
+
+
+

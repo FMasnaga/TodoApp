@@ -10,7 +10,7 @@ namespace TODO.API.Model
         public string Description {get; set;}
 
 
-        public DateTime Time {get;set;}
+        public string Date {get;set;}
 
     }
 }

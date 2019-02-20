@@ -21,14 +21,14 @@ namespace TODO.API.Data
                 {
                     Id = 1,
                     Description = "First thing to do",
-                    Time = new DateTime(2015, 12, 25)
+                    Date = "2020-09-09"
    
                 },
                 new Item
                 {
                     Id = 2,
                     Description = "Second thing to do",
-                    Time = new DateTime (2018, 8, 8)
+                    Date = "2021-09-19"
                 }
             );
         }
